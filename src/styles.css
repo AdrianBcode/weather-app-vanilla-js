@@ -15,7 +15,7 @@ h1 {
   margin-bottom: 1px;
 }
 li:first-letter {
-text-transform: capitalize;
+  text-transform: capitalize;
 }
 .btn {
   background-color: white;
@@ -30,7 +30,7 @@ text-transform: capitalize;
 
 .card {
   width: 752.5px;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #267bac 0%, #94dcd3 100%);
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   border: 3px solid rgba(102, 102, 102, 0.658);
@@ -38,7 +38,7 @@ text-transform: capitalize;
 }
 
 .card-body {
-  color: white;
+  color: rgb(211, 208, 208);
   padding-bottom: 0;
 }
 
@@ -54,7 +54,6 @@ text-transform: capitalize;
 #celcius {
   font-size: 20px;
   text-decoration: none;
-  
 }
 
 #currentState {
@@ -89,4 +88,5 @@ text-transform: capitalize;
 }
 
 .nextDay {
-  font-size: 15px;}
+  font-size: 15px;
+}
