@@ -1,0 +1,92 @@
+ul {
+  list-style: none;
+  background: transparent;
+}
+
+h6 {
+  font-size: 16px;
+  padding-left: 43px;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 1px;
+}
+li:first-letter {
+text-transform: capitalize;
+}
+.btn {
+  background-color: white;
+  color: #666666;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: block;
+}
+
+.card {
+  width: 752.5px;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  border: 3px solid rgba(102, 102, 102, 0.658);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  color: white;
+  padding-bottom: 0;
+}
+
+.currentWeather {
+  font-size: 70px;
+}
+.currentWeather .active {
+  color: white;
+  cursor: default;
+}
+
+#fahrenheit,
+#celcius {
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+
+#currentState {
+  font-weight: 500;
+}
+
+.day1,
+.day2,
+.day3,
+.day4,
+.day5 {
+  margin-top: 20px;
+}
+
+.form-control {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  font-size: 13px;
+}
+
+.list-group-horizontal {
+  margin: 0px 0px 20px;
+}
+
+.list-group-item {
+  list-style-type: none;
+  padding: 12px 20px 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.33);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nextDay {
+  font-size: 15px;}

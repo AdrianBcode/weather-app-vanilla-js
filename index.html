@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="form-row">
+            <div class="col-8">
+            <form id="location-search-form">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="input-location"
+                  autocomplete="off"
+                  placeholder="Weather in..."
+                />
+              </div>
+              <div class="col-1">
+                <button type="submit" class="btn btn-outline-secondary mb-2">
+                  <span
+                    class="iconify"
+                    data-icon="fa-solid:search-location"
+                    data-inline="false"
+                  ></span>
+                </button>
+              </div>
+            </form>
+            <div class="col-3">
+              <button
+                id="button-current-location"
+                type="submit"
+                class="btn btn-outline-secondary mb-2"
+              >
+                Current Location
+              </button>
+            </div>
+          </div>
+
+          <h1 class="card-title current-location">
+            <span
+              class="iconify locationPin"
+              data-icon="bytesize:location"
+              data-inline="false"
+            ></span
+            ><span id="city-weather"></span>
+          </h1>
+
+          <h6 class="card-title"></h6>
+
+          <div class="row">
+            <p class="card-text col-6">
+              <span class="currentWeather">
+                <img
+                  src=""
+                  alt=""
+                  id="current-location-icon"
+                  class="float-left"
+                />
+                <span id="current-temperature"></span>
+                <a href="#" id="celcius" class="active">ºC</a> .
+                <a href="#" id="fahrenheit">ºF</a>
+              </span>
+            </p>
+
+            <ul class="card-text col-0.5">
+              <li>
+                <span id="currentState"></span>
+              </li>
+              <li>Day: <span id="day-temp"></span>º ↑</li>
+              <li>Night: <span id="night-temp"></span>º ↓</li>
+            </ul>
+
+            <ul class="card-text col-0.5">
+              <li>Humidity: <span id="humidity"></span> %</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+
+          <ul class="list-group list-group-horizontal" id="forecast">
+          </ul>
+        </div>
+      </div>
+      <p class="footer">
+        <a href="https://github.com/AdrianBcode/js-vanilla-weather-app"
+          >Open-source code</a
+        >
+        by Adrian I. Burac
+      </p>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
